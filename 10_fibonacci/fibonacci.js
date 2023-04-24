@@ -1,4 +1,7 @@
 const fibonacci = function(num) {
+    if(num<0){
+        return "OOPS";
+    }
     let fibonacci = [1,1];
     fibonacci.length = num;
     //console.log(fibonacci.length);
