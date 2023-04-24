@@ -1,11 +1,14 @@
 const fibonacci = function(num) {
     let fibonacci = [1,1];
     fibonacci.length = num;
-    for(let i =3; i<fibonacci.length; i++){
-        fibonacci[i]= fibonacci[i-1]+ fibonacci[i-2];
+    //console.log(fibonacci.length);
+    for(let i =2; i<fibonacci.length; i++){
+        thenum =fibonacci[i-1] + fibonacci[i-2];
+        fibonacci[i]= thenum;
+        console.log(fibonacci[i]);
     }
-    return fibonacci[num];
-
+    console.log(fibonacci);
+    return fibonacci[num -1];
 };
 
 // Do not edit below this line
